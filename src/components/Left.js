@@ -14,7 +14,6 @@ function Right({ buttonText }) {
         width: "300px",
         arrowWidth: "5px",
         arrowHeight: "5px",
-        // arrowLeft: "calc(50% - 5px)",
     });
     const [show, setShow] = useState(false);
     const [scrolled, setScrolled] = useState(false);
@@ -378,13 +377,9 @@ function Right({ buttonText }) {
                                                         transform: "rotate(-135deg)",
                                                         borderWidth: tooltipStyles.arrowHeight,
                                                         background: tooltipStyles.backgroundColor,
-                                                        // borderColor: `transparent transparent ${tooltipStyles.backgroundColor} transparent`,
-                                                        // borderBottomWidth: 0,
-                                                        // width: "50px",
                                                         height: "10px",
                                                         position: "absolute",
                                                         top: '47px',
-                                                        // left: tooltipStyles.arrowLeft,
                                                     }}
                                                 ></div>
                                             </div>
@@ -429,13 +424,9 @@ function Right({ buttonText }) {
                                                         transform: "rotate(-135deg)",
                                                         borderWidth: tooltipStyles.arrowHeight,
                                                         background: tooltipStyles.backgroundColor,
-                                                        // borderColor: `transparent transparent ${tooltipStyles.backgroundColor} transparent`,
-                                                        // borderBottomWidth: 0,
-                                                        // width: "50px",
                                                         height: "10px",
                                                         position: "absolute",
                                                         top: '-5px',
-                                                        // left: tooltipStyles.arrowLeft,
                                                     }}
                                                 ></div>
                                             </div>
@@ -481,13 +472,9 @@ function Right({ buttonText }) {
                                                 transform: "rotate(-135deg)",
                                                 borderWidth: tooltipStyles.arrowHeight,
                                                 background: tooltipStyles.backgroundColor,
-                                                // borderColor: `transparent transparent ${tooltipStyles.backgroundColor} transparent`,
-                                                // borderBottomWidth: 0,
-                                                // width: "50px",
                                                 height: "10px",
                                                 position: "absolute",
                                                 top: '276px',
-                                                // left: tooltipStyles.arrowLeft,
                                             }}
                                         ></div>
                                     </div>
@@ -531,13 +518,9 @@ function Right({ buttonText }) {
                                                         transform: "rotate(-135deg)",
                                                         borderWidth: tooltipStyles.arrowHeight,
                                                         background: tooltipStyles.backgroundColor,
-                                                        // borderColor: `transparent transparent ${tooltipStyles.backgroundColor} transparent`,
-                                                        // borderBottomWidth: 0,
-                                                        // width: "50px",
                                                         height: "10px",
                                                         position: "absolute",
                                                         top: '560px',
-                                                        // left: tooltipStyles.arrowLeft,
                                                     }}
                                                 ></div>
                                             </div>
@@ -581,13 +564,9 @@ function Right({ buttonText }) {
                                                         transform: "rotate(-135deg)",
                                                         borderWidth: tooltipStyles.arrowHeight,
                                                         background: tooltipStyles.backgroundColor,
-                                                        // borderColor: `transparent transparent ${tooltipStyles.backgroundColor} transparent`,
-                                                        // borderBottomWidth: 0,
-                                                        // width: "50px",
                                                         height: "10px",
                                                         position: "absolute",
                                                         top: '558px',
-                                                        // left: tooltipStyles.arrowLeft,
                                                     }}
                                                 ></div>
                                             </div>

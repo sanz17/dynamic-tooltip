@@ -102,11 +102,10 @@ docker run -it chat-backend
 |   ├──App.test.js
 |   ├──index.css
 |   ├──index.js
-|   ├──logo.svg
 |   ├──reportWebVitals.js
 │   └── setupTests.js
 └── public
-    ├── favicon.ico
+    ├── manifest.json
     └── index.html
 ```
 
@@ -127,15 +126,15 @@ We are using ReactJS for more dynamic and lightweight code because although Next
 #### The perfect values as input can be
 
 <p align="center">
-  <img src="https://github.com/sanz17/dynamic-tooltip/blob/main/Target%20Element.png">
+  <img src="https://github.com/sanz17/dynamic-tooltip/blob/main/perfect.png">
 </p>
 
 
 ## Possible Solution
 
-Contrary to initial impressions, the lack of browser compatibility with HyperDHT doesn't prevent us from crafting the frontend of our application in React. To overcome this, we need a connection handling mechanism that mirrors HyperDHT’s functionalities, yet is inherently designed for browser-based environments.
+Contrary to initial impressions with NextJS, the lack of routing doesn't prevent us from crafting the frontend of our application in React. We need a connection handling mechanism that mirrors JavaScript's functionalities, yet is inherently designed for browser-based environments.
 
-By creating a solution that emulates HyperDHT's capabilities but is tailored for browser compatibility, we're able to build a robust P2P chat application. This application combines the sophisticated UI potential of React for frontend development with a browser-friendly implementation for secure, P2P connections, analogous to the service offered by HyperDHT.
+By creating a solution that emulates a mobile screen capabilities but is tailored for browser compatibility, we're able to build a robust Dynamic tooltip application. This application combines the sophisticated UI potential of React.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
