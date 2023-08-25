@@ -2,6 +2,7 @@ import React from "react";
 import { Row, Col } from "react-bootstrap";
 import Left from "./Left";
 import Right from './Right';
+import Design from "./Design";
 
 
 function Home() {
@@ -14,6 +15,9 @@ function Home() {
                 <Col>
                     <Right />
                 </Col>
+                {/* <Col>
+                    <Design/>
+                </Col> */}
             </Row>
         </>
     )
