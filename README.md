@@ -86,6 +86,8 @@ docker run -it chat-backend
 
 ## Folder Structure
 ```
+├──Dockerfile
+├──.dockerignore
 ├── Perfect.png
 ├── package.json
 ├── package-lock.json
