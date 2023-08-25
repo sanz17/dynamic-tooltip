@@ -13,11 +13,10 @@ function Right({ buttonText }) {
     width: "300px",
     arrowWidth: "5px",
     arrowHeight: "5px",
-    arrowLeft: "calc(50% - 5px)",
+    // arrowLeft: "calc(50% - 5px)",
   });
   const [tooltipText, setTooltipText] = useState("");
   const [selectedButton, setSelectedButton] = useState("");
-
   const buttonRefs = {
     button1: useRef(null),
     button2: useRef(null),
@@ -31,7 +30,7 @@ function Right({ buttonText }) {
     setShowTooltip(true);
     setTooltipStyles((prevStyles) => ({
       ...prevStyles,
-      arrowLeft: "calc(50% - " + prevStyles.arrowWidth + ")", // Calculate arrow's left position
+      arrowLeft: "calc(50% - " + prevStyles.arrowWidth + ")",
     }));
   };
 
@@ -289,7 +288,7 @@ function Right({ buttonText }) {
                             height: "10px",
                             position: "absolute",
                             top: '47px',
-                            left: tooltipStyles.arrowLeft,
+                            // left: tooltipStyles.arrowLeft,
                           }}
                         ></div>
                       </div>
@@ -340,7 +339,7 @@ function Right({ buttonText }) {
                             height: "10px",
                             position: "absolute",
                             top: '-5px',
-                            left: tooltipStyles.arrowLeft,
+                            // left: tooltipStyles.arrowLeft,
                           }}
                         ></div>
                       </div>
@@ -392,7 +391,7 @@ function Right({ buttonText }) {
                         height: "10px",
                         position: "absolute",
                         top: '276px',
-                        left: tooltipStyles.arrowLeft,
+                        // left: tooltipStyles.arrowLeft,
                       }}
                     ></div>
                   </div>
@@ -442,7 +441,7 @@ function Right({ buttonText }) {
                             height: "10px",
                             position: "absolute",
                             top: '560px',
-                            left: tooltipStyles.arrowLeft,
+                            // left: tooltipStyles.arrowLeft,
                           }}
                         ></div>
                       </div>
@@ -492,7 +491,7 @@ function Right({ buttonText }) {
                             height: "10px",
                             position: "absolute",
                             top: '558px',
-                            left: tooltipStyles.arrowLeft,
+                            // left: tooltipStyles.arrowLeft,
                           }}
                         ></div>
                       </div>
