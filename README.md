@@ -1,7 +1,7 @@
 <a name="readme-top"></a>
 
 <div align="center">
-  <h3 align="center">P2P Chat App using Holepunch</h3>
+  <h3 align="center">Dynamic Tooltip</h3>
 </div>
 
 ### Flowchart of how things are working:
