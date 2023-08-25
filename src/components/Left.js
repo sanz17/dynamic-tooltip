@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import { Row, Col, Form, Button } from "react-bootstrap";
 import "./Right.css";
+import Toast from 'react-bootstrap/Toast';
 
 function Right({ buttonText }) {
     const [showTooltip, setShowTooltip] = useState(false);
@@ -15,6 +16,7 @@ function Right({ buttonText }) {
         arrowHeight: "5px",
         // arrowLeft: "calc(50% - 5px)",
     });
+    const [show, setShow] = useState(false);
     const [scrolled, setScrolled] = useState(false);
     const [loopNum, setLoopNum] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
@@ -126,6 +128,7 @@ function Right({ buttonText }) {
                         fontWeight: "bold",
                     }}
                 >
+                    <Button variant="dark" onClick={() => setShow(true)}>Check constraints</Button>
                     <div className="style-inputs">
                         <Form.Group as={Row} controlId="formSelect">
                             <Form.Label column sm={12} style={{ paddingRight: "665px" }}>
@@ -158,11 +161,20 @@ function Right({ buttonText }) {
                                     className="mb-3"
                                     controlId="exampleForm.ControlInput1"
                                 >
+
                                     <Form.Label
                                         style={{ paddingRight: "285px", paddingTop: "10px" }}
                                     >
                                         Text size
                                     </Form.Label>
+                                    <Toast onClose={() => setShow(false)} show={show} delay={3000} autohide>
+                                <Toast.Header>
+                                    
+                                    <strong className="me-auto">Please put px !</strong>
+                
+                                </Toast.Header>
+                                <Toast.Body>Please try to keep it within the range of 25px</Toast.Body>
+                            </Toast>
                                     <Form.Control
                                         type="text"
                                         placeholder="Input"
@@ -178,10 +190,18 @@ function Right({ buttonText }) {
                                     controlId="exampleForm.ControlInput1"
                                 >
                                     <Form.Label
-                                        style={{ paddingRight: "290px", paddingTop: "10px" }}
+                                        style={{ paddingRight: "285px", paddingTop: "10px" }}
                                     >
-                                        Padding
+                                        Padding 
                                     </Form.Label>
+                                    <Toast onClose={() => setShow(false)} show={show} delay={3000} autohide>
+                                        <Toast.Header>
+
+                                            <strong className="me-auto">Please put px !</strong>
+
+                                        </Toast.Header>
+                                        <Toast.Body>Please try to keep it within the range of 20px</Toast.Body>
+                                    </Toast>
                                     <Form.Control
                                         type="text"
                                         placeholder="Input"
@@ -194,8 +214,9 @@ function Right({ buttonText }) {
                         </Row>
                         <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
                             <Form.Label style={{ paddingRight: "675px", paddingTop: "10px" }}>
-                                Text colour
+                                Text colour 
                             </Form.Label>
+
                             <Form.Control
                                 type="text"
                                 placeholder="Input"
@@ -225,6 +246,7 @@ function Right({ buttonText }) {
                                     >
                                         Corner radius
                                     </Form.Label>
+                                    
                                     <Form.Control
                                         type="text"
                                         placeholder="Input"
@@ -244,6 +266,14 @@ function Right({ buttonText }) {
                                     >
                                         Tooltip width
                                     </Form.Label>
+                                    <Toast onClose={() => setShow(false)} show={show} delay={3000} autohide>
+                                        <Toast.Header>
+
+                                            <strong className="me-auto">Please put px !</strong>
+
+                                        </Toast.Header>
+                                        <Toast.Body>Please try to keep it within the range of 150-300px</Toast.Body>
+                                    </Toast>
                                     <Form.Control
                                         type="text"
                                         min={100}
@@ -265,6 +295,14 @@ function Right({ buttonText }) {
                                     >
                                         Arrow width
                                     </Form.Label>
+                                    <Toast onClose={() => setShow(false)} show={show} delay={3000} autohide>
+                                        <Toast.Header>
+
+                                            <strong className="me-auto">Please put px !</strong>
+
+                                        </Toast.Header>
+                                        <Toast.Body>Please try to keep it less than 20px</Toast.Body>
+                                    </Toast>
                                     <Form.Control
                                         type="text"
                                         placeholder="Input"
@@ -297,7 +335,7 @@ function Right({ buttonText }) {
                     </div>
                 </Col>
                 <Col>
-                    <div style={{'marginLeft':'430px','marginTop':'20px'}}>
+                    <div style={{ 'marginLeft': '430px', 'marginTop': '20px' }}>
                         <Button variant="dark" style={{ 'color': 'white', 'fontSize': '35px', 'background': 'black' }} className="social-button" ><span>{text}</span></Button>
                     </div>
                     <div className="mobile-screen">

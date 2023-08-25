@@ -2,7 +2,7 @@ import React from "react";
 import { Row, Col } from "react-bootstrap";
 import Left from "./Left";
 import Right from './Right';
-import Design from "./Design";
+import Footer from "./Footer";
 
 
 function Home() {
@@ -19,6 +19,8 @@ function Home() {
                     <Design/>
                 </Col> */}
             </Row>
+            <Footer/>
+
         </>
     )
 }
