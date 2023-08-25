@@ -86,10 +86,7 @@ docker run -it chat-backend
 
 ## Folder Structure
 ```
-.
-
-├── README.md
-├── Target Element.png
+├── Perfect.png
 ├── package.json
 ├── package-lock.json
 ├── .gitignore
@@ -126,6 +123,12 @@ The ranges are mentioned in a toast of the app:
 - Arrowtip height < 10px
 
 We are using ReactJS for more dynamic and lightweight code because although NextJS is superior for applications with multiple routes, but our application doesnot need a redirection feature.
+
+#### The perfect values as input can be
+
+<p align="center">
+  <img src="https://github.com/sanz17/dynamic-tooltip/blob/main/Target%20Element.png">
+</p>
 
 
 ## Possible Solution
