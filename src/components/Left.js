@@ -176,7 +176,7 @@ function Right({ buttonText }) {
                             </Toast>
                                     <Form.Control
                                         type="text"
-                                        placeholder="Input"
+                                        placeholder="Input with px (<30px for best result)"
                                         onChange={(e) =>
                                             handleStyleChange("fontSize", e.target.value)
                                         }
@@ -203,7 +203,7 @@ function Right({ buttonText }) {
                                     </Toast>
                                     <Form.Control
                                         type="text"
-                                        placeholder="Input"
+                                        placeholder="Input with px (<25px for best result)"
                                         onChange={(e) =>
                                             handleStyleChange("padding", e.target.value)
                                         }
@@ -248,7 +248,7 @@ function Right({ buttonText }) {
                                     
                                     <Form.Control
                                         type="text"
-                                        placeholder="Input"
+                                        placeholder="Input in px"
                                         onChange={(e) =>
                                             handleStyleChange("borderRadius", e.target.value)
                                         }
@@ -277,7 +277,7 @@ function Right({ buttonText }) {
                                         type="text"
                                         min={100}
                                         max={300}
-                                        placeholder="Input"
+                                        placeholder="Input with px (150-300px for best result)"
                                         onChange={(e) => handleStyleChange("width", e.target.value)}
                                     />
                                 </Form.Group>
@@ -304,7 +304,7 @@ function Right({ buttonText }) {
                                     </Toast>
                                     <Form.Control
                                         type="text"
-                                        placeholder="Input"
+                                        placeholder="Input with px (<10px for best result)"
                                         onChange={(e) =>
                                             handleStyleChange("arrowWidth", e.target.value)
                                         }
@@ -323,7 +323,7 @@ function Right({ buttonText }) {
                                     </Form.Label>
                                     <Form.Control
                                         type="text"
-                                        placeholder="Input"
+                                        placeholder="Input with px (<10px for best result)"
                                         onChange={(e) =>
                                             handleStyleChange("arrowHeight", e.target.value)
                                         }
