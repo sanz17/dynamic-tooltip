@@ -9,6 +9,8 @@
   <img src="https://github.com/sanz17/dynamic-tooltip/blob/main/Target%20Element.png">
 </p>
 
+### Deployed site
+[Click here](https://loquacious-brigadeiros-b30d54.netlify.app/)
 
 ## About the App
 
@@ -70,16 +72,9 @@ npm run dev (for development environment)
 
 Start the server instance
 ```sh
-cd backend
-docker build -t chat-backend .
-docker run -it chat-backend
-```
-
-You may spin up multiple client instances
-```sh
-cd frontend
-docker build -t chat-backend .
-docker run -it chat-backend
+cd dynamic-tooltip
+docker build -t dynamic-tooltip .
+docker run -it dynamic-tooltip
 ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
